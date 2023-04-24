@@ -1,24 +1,27 @@
 .violations_container {
-    height: 100vh;
-    width: 100vw;
-    padding: 75px 0px 10px 0px;
-    color: #161616;
+    height: 100%;
+    width: auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
 .violations_header { 
-    width: 100%;
-    letter-spacing: -1px;
-    font-weight: 700;
-    padding: 10px;
+    width: -webkit-fill-available;
+    letter-spacing: var(--spacing);
     display: flex;
     align-items: center;
-    position: fixed;
-    background: #ffffff;
-    color: #161616;
-    z-index: 1;
+    background: #101010;
+    word-wrap: break-word;
+    color: #fff;
+    z-index: -1;
     font-size: 19px;
+    padding: 10px;
+    position: fixed;
+    font-family: var(--medium);
+    text-transform: uppercase;
+    top: 65px;
+    z-index: 1;
 }
 
 .violations_results {
@@ -29,7 +32,8 @@
     align-items: center;
     justify-content: center;
     flex-flow: wrap;
-    margin-top: 50px;
+    margin-top: 95px;
+    z-index: -1;
 }
 
 .violations_display {
@@ -37,24 +41,45 @@
     height: auto;
     width: 100%;
     padding: 10px 10px 0px 10px;
-    background: #ffffff;
     border-radius: 5px;
-    letter-spacing: -.7px;
-    font-weight: 700;
+    background: #000;
+    color: #fff;
+    letter-spacing: -.5px;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    font-family: var(--medium);
+}
+
+.violations_display button {
+    border: none;
+    outline: none;
+    background: #7fffd4;
+    color: #000;
+    padding: 5px;
+    cursor: pointer;
+    letter-spacing: -.5px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    font-family: var(--medium);
+}
+
+.violations_display button:hover {
+    background: #483d8b;
+    color: #ffffff;
+    transition: .3s ease-in-out;
 }
 
 @media screen and (max-width: 790px) {
     .violations_header.active {
         z-index: -1;
     }
-}
 
-@media screen and (max-width: 485px) {
     .violations_results {
-       margin-top: 50px;
-       /* font-size: ; */
+       /* margin-top: 10px; */
     }
 }
+
+/* @media screen and (max-width: 485px) {
+
+} */

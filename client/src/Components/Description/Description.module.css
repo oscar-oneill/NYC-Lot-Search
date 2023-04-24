@@ -1,0 +1,13 @@
+.container {
+    height: auto;
+    width: 100vw;
+    color: #f0f8ff;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 700;
+    overflow-y: scroll;
+    letter-spacing: var(--spacing);
+    font-family: var(--medium);
+    position: relative;
+    top: 114px;
+}

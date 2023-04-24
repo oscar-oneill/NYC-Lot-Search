@@ -1,0 +1,11 @@
+.container {
+    /* margin-top: 36px; */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #101010;
+    font-family: var(--medium);
+    letter-spacing: var(--spacing);
+    position: relative;
+    top: 108px;
+}

@@ -1,0 +1,26 @@
+.container {
+    height: auto;
+    background: #000;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    padding: 15px;
+    top: 65px;
+    right: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0.1px solid rgb(52, 52, 52);
+}
+
+.link {
+    font-size: 20px;
+    margin: 2px 0px;
+    transition: var(--hover);
+}
+
+.link:hover {
+    color: #7fffd4;
+    transition: var(--hover);
+}
+

@@ -1,0 +1,32 @@
+.container {
+    height: auto;
+    width: 185px;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: var(--medium);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container:hover {
+    background: #242424;
+    transition: var(--hover);
+}
+
+.title {
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start;
+    width: 125px;
+}
+
+.number {
+    font-size: 30px;
+}
+
+.gif {
+    height: 20px;
+    object-fit: cover;
+}

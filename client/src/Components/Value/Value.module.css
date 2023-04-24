@@ -1,0 +1,8 @@
+.container {
+    height: 70px;
+    width: 300px;
+    background: transparent;
+    color: aliceblue;
+    margin: 0px 15px 15px 0px;
+    font-family: var(--medium);
+}
